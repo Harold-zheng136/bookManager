@@ -5,11 +5,11 @@ package cn.bdqn.pojo;
  */
 public class Comment {
 
-    private Integer id;
-    private Integer user_id;
-    private Integer book_id;
-    private String content;
-    private String commentDate;
+    private Integer id;//评论id
+    private Integer user_id;//用户id
+    private Integer book_id;//图书id
+    private String content;//评论内容
+    private String commentDate;//评论时间
     private Integer top;
 
     @Override

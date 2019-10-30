@@ -5,12 +5,12 @@ package cn.bdqn.pojo;
  */
 public class Category {
 
-    private Integer id;
-    private Integer manager_id;
-    private String catName;
+    private Integer id;//种类id
+    private Integer manager_id;//管理员id
+    private String catName;//种类名称
     private Integer parent_id;
     private Boolean isParent;
-    private String createDate;
+    private String createDate;//创建时间
 
     @Override
     public String toString() {
