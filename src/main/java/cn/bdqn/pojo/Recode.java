@@ -10,7 +10,7 @@ public class Recode {
     private Integer user_id;//用户id
     private String recodeDate;//借出日期
     private String backDate;//归还日期
-    private Boolean returnBook;//是否归还
+    private Integer returnBook;//是否归还
     private Double tiketFee;//借阅费用
 
     @Override
@@ -66,11 +66,11 @@ public class Recode {
         this.backDate = backDate;
     }
 
-    public Boolean getReturnBook() {
+    public Integer getReturnBook() {
         return returnBook;
     }
 
-    public void setReturnBook(Boolean returnBook) {
+    public void setReturnBook(Integer returnBook) {
         this.returnBook = returnBook;
     }
 

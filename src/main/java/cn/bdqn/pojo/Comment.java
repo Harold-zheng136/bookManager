@@ -10,7 +10,7 @@ public class Comment {
     private Integer book_id;//图书id
     private String content;//评论内容
     private String commentDate;//评论时间
-    private Integer top;
+    private Integer top;//评论星级
 
     @Override
     public String toString() {
