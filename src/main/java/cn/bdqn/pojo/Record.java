@@ -3,7 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 借阅图书类
  */
-public class Recode {
+public class Record {
 
     private Integer id;//借阅id
     private Integer book_id;//图书id
@@ -15,7 +15,7 @@ public class Recode {
 
     @Override
     public String toString() {
-        return "Recode{" +
+        return "Record{" +
                 "id=" + id +
                 ", book_id=" + book_id +
                 ", user_id=" + user_id +
