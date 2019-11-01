@@ -45,7 +45,7 @@
     <!-- dao
 	MapperScannerConfigurer 自动生成dao的实现类-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="cn.bdqn.dao"></property>
+        <property name="basePackage" value="cn.bdqn.mapper"></property>
     </bean>
     <!-- service -->
     <context:component-scan base-package="cn.bdqn.service"></context:component-scan>
