@@ -3,8 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 预定类
  */
-public class Order {
-
+public class TbOrder {
     private Integer id;//预定id
     private Integer user_id;//用户id
     private Integer book_id;//图书id
@@ -13,7 +12,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "TbOrder{" +
                 "id=" + id +
                 ", user_id=" + user_id +
                 ", book_id=" + book_id +

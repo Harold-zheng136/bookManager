@@ -3,7 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 管理员类
  */
-public class Manager {
+public class TbManager {
 
     private Integer id;//管理员id
     private String managerName;//管理员用户名
@@ -11,7 +11,7 @@ public class Manager {
 
     @Override
     public String toString() {
-        return "Manager{" +
+        return "TbManager{" +
                 "id=" + id +
                 ", managerName='" + managerName + '\'' +
                 ", password='" + password + '\'' +

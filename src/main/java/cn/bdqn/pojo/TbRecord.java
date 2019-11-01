@@ -3,7 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 借阅图书类
  */
-public class Record {
+public class TbRecord {
 
     private Integer id;//借阅id
     private Integer book_id;//图书id
@@ -15,7 +15,7 @@ public class Record {
 
     @Override
     public String toString() {
-        return "Record{" +
+        return "TbRecord{" +
                 "id=" + id +
                 ", book_id=" + book_id +
                 ", user_id=" + user_id +

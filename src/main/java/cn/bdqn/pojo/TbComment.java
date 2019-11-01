@@ -3,8 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 评论类
  */
-public class Comment {
-
+public class TbComment {
     private Integer id;//评论id
     private Integer user_id;//用户id
     private Integer book_id;//图书id
@@ -14,7 +13,7 @@ public class Comment {
 
     @Override
     public String toString() {
-        return "Comment{" +
+        return "TbComment{" +
                 "id=" + id +
                 ", user_id=" + user_id +
                 ", book_id=" + book_id +

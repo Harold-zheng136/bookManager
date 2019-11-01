@@ -3,7 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 答复类
  */
-public class Reply {
+public class TbReply {
 
     private Integer id;//答复id
     private Integer comment_id;//评论id
@@ -12,7 +12,7 @@ public class Reply {
 
     @Override
     public String toString() {
-        return "Reply{" +
+        return "TbReply{" +
                 "id=" + id +
                 ", comment_id=" + comment_id +
                 ", content='" + content + '\'' +

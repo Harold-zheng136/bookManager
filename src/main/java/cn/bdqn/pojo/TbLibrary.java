@@ -3,8 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 图书类
  */
-public class Library {
-
+public class TbLibrary {
     private Integer id;//图书id
     private Integer cate_id;//种类id
     private Integer manager_id;//管理员id
@@ -21,7 +20,7 @@ public class Library {
 
     @Override
     public String toString() {
-        return "Library{" +
+        return "TbLibrary{" +
                 "id=" + id +
                 ", cate_id=" + cate_id +
                 ", manager_id=" + manager_id +

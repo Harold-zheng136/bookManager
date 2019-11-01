@@ -40,12 +40,12 @@
             </list>
         </property>
        <!--配置别名-->
-        <property name="typeAliasesPackage" value="cn.smbms.pojo" />
+        <property name="typeAliasesPackage" value="cn.bdqn.pojo" />
     </bean>
     <!-- dao
 	MapperScannerConfigurer 自动生成dao的实现类-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="cn.smbms.dao"></property>
+        <property name="basePackage" value="cn.bdqn.dao"></property>
     </bean>
     <!-- service -->
     <context:component-scan base-package="cn.bdqn.service"></context:component-scan>

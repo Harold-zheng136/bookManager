@@ -3,7 +3,7 @@ package cn.bdqn.pojo;
 /**
  * 用户类
  */
-public class User {
+public class TbUser {
 
     private Integer id;//用户id
     private String userName;//用户名
@@ -21,7 +21,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "TbUser{" +
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +

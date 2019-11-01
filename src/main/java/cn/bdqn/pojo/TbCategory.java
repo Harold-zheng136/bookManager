@@ -1,9 +1,6 @@
 package cn.bdqn.pojo;
 
-/**
- * 种类类
- */
-public class Category {
+public class TbCategory {
 
     private Integer id;//种类id
     private Integer manager_id;//管理员id
@@ -13,7 +10,7 @@ public class Category {
 
     @Override
     public String toString() {
-        return "Category{" +
+        return "TbCategory{" +
                 "id=" + id +
                 ", manager_id=" + manager_id +
                 ", catName='" + catName + '\'' +
@@ -52,4 +49,6 @@ public class Category {
     public void setCreateDate(String createDate) {
         this.createDate = createDate;
     }
+
+
 }
