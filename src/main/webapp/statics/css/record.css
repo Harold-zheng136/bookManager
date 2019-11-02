@@ -3,6 +3,33 @@
     margin: 0px;
 }
 
-#toutr{
-    margin: 20px 0px;
+#touspan{
+    display: inline-block;
+    margin: 10px 10px;
+
+}
+.tyo{
+    margin: 10px 5px;
+    height: 30px;
+    width: 100px;
+}
+.tyo2{
+    margin: 10px 5px;
+    height: 30px;
+    width: 200px;
+}
+#butt{
+    height: 30px;
+    width: 50px;
+}
+
+.tab{
+    border: 1px gainsboro solid;
+}
+.tab tr td{
+    border-bottom: 1px gainsboro solid;
+}
+
+#menu td{
+    padding: 0px 5px;
 }

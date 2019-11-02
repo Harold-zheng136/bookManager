@@ -13,20 +13,20 @@
 </head>
 <body>
     <div>
-        <table>
-            <tr id="toutr">
-                <td style="background-color: darkgray;" colspan="11">已超出规定借阅时间</td>
+        <table class="tab">
+            <tr>
+                <td style="background-color: ghostwhite;" colspan="11"><span id="touspan">已超出规定借阅时间</span></td>
             </tr>
             <tr>
-                <td>
-                    <select>
-                        <option value="0">借阅人姓</option>
+                <td colspan="11">
+                    <select class="tyo">
+                        <option value="0">借阅人姓名</option>
                     </select>
-                    <input type="text" placeholder="请输入您想查询的借阅集记录">
-                    <button>搜索</button>
+                    <input type="text" placeholder="请输入您想查询的借阅集记录" class="tyo2">
+                    <button id="butt">搜索</button>
                 </td>
             </tr>
-            <tr>
+            <tr id="menu">
                 <td>借阅编号</td>
                 <td>图书编号</td>
                 <td>图书名称</td>
