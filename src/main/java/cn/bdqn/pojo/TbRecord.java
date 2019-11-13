@@ -1,5 +1,9 @@
 package cn.bdqn.pojo;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * 借阅图书类
  */
@@ -16,6 +20,45 @@ public class TbRecord {
     private String telNum;//电话
     private Double tiketFee;//借阅费用
 
+
+    public String  getRecordDate1() throws Exception{
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date recordDate = dateFormat.parse(this.recordDate);
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(recordDate);
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH)+1;//月份从0开始，所以要+1
+        int day = calendar.get(Calendar.DATE);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int minute = calendar.get(Calendar.MINUTE);
+        if (hour >= 12){
+            return year+"-"+(month<10?"0"+month:month)+"-"+(day<10?"0"+day:day)+" 下午"+
+                    (hour-12<10?"0"+(hour-12):(hour-12))+":"+(minute<10?"0"+minute:minute);
+        }else{
+            return year+"-"+(month<10?"0"+month:month)+"-"+(day<10?"0"+day:day)+" 上午"+
+                    (hour<10?"0"+(hour):(hour))+":"+(minute<10?"0"+minute:minute);
+        }
+    }
+    public String  getBackDate2() throws Exception{
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date backDate = dateFormat.parse(this.backDate);
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(backDate);
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH)+1;//月份从0开始，所以要+1
+        int day = calendar.get(Calendar.DATE);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int minute = calendar.get(Calendar.MINUTE);
+        if (hour >= 12){
+            return year+"-"+(month<10?"0"+month:month)+"-"+(day<10?"0"+day:day)+" 下午"+
+                    (hour-12<10?"0"+(hour-12):(hour-12))+":"+(minute<10?"0"+minute:minute);
+        }else{
+            return year+"-"+(month<10?"0"+month:month)+"-"+(day<10?"0"+day:day)+" 上午"+
+                    (hour<10?"0"+(hour):(hour))+":"+(minute<10?"0"+minute:minute);
+        }
+    }
     @Override
     public String toString() {
         return "TbRecord{" +

@@ -66,10 +66,10 @@
                             <span>${tbrecord.telNum}</span>
                         </td>
                         <td>
-                            <span>${tbrecord.recordDate}</span>
+                            <span>${tbrecord.recordDate1}</span>
                         </td>
                         <td>
-                            <span>${tbrecord.backDate}</span>
+                            <span>${tbrecord.backDate2}</span>
                         </td>
                         <td>
                             <span id="return">
