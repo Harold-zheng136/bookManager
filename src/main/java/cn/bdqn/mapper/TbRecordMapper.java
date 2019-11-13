@@ -12,7 +12,7 @@ public interface TbRecordMapper {
                                    @Param("currentPageNo") Integer currentPageNo,
                                    @Param("pageSize") Integer pageSize) throws Exception;
     //通过条件查询学生用户数量
-    int getTbRecordCount(@Param("user_id")Integer user_id,
+    int getTbRecordCount(@Param("user_id") Integer user_id,
                          @Param("bookName") String bookName)throws Exception;
 
     //点击归还按照id修改图书状态
